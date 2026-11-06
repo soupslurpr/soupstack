@@ -1,6 +1,6 @@
 # soupstack
 
-soupslurpr's personal agent skills, published as used.
+My personal agent skills, published as used.
 
 These are the live skills from my own setup, not a generalized library.
 This is how I currently work, and it will keep changing: skills can be
