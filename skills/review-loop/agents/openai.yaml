@@ -1,0 +1,6 @@
+interface:
+  display_name: "Review Loop"
+  short_description: "Automatic Sol review and revision before completion"
+  default_prompt: "Use $review-loop to independently review the current change and resolve worthwhile findings within the task scope."
+policy:
+  allow_implicit_invocation: true

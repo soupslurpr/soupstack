@@ -1,0 +1,7 @@
+interface:
+  display_name: "Super Review"
+  short_description: "Extensive phased review on request"
+  default_prompt: "Use $super-review to review the following target:"
+
+policy:
+  allow_implicit_invocation: true

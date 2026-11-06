@@ -1,0 +1,6 @@
+interface:
+  display_name: "Lead Workflow"
+  short_description: "Automatic lead workflow with Astra or Sol debate and Sol review"
+  default_prompt: "Use $lead-workflow to lead this work, owning the approach and final decisions while debating, executing, reviewing, and verifying with subagents by default."
+policy:
+  allow_implicit_invocation: true
