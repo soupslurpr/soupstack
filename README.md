@@ -15,8 +15,9 @@ Read a skill before installing it, expect to adapt it, and see
   committing to it. Invoked when the user asks to be grilled. Adapted from
   Matt Pocock's skill of the same name; see [CREDITS](skills/grilling/CREDITS).
 - [lead-workflow](skills/lead-workflow/SKILL.md) — The default lead agent
-  workflow: own the approach, debate it with a strong subagent, approve it,
-  then delegate execution and independent review. Loads automatically unless
+  workflow: the lead and a strong subagent independently develop
+  approaches, debate and revise both, then the lead approves, delegates
+  execution, and gets independent review. Loads automatically unless
   a more specific lead workflow applies. Subagents must not load it unless
   explicitly assigned to lead.
 - [review-loop](skills/review-loop/SKILL.md) — Get independent review from a
@@ -48,8 +49,10 @@ on track. `xhigh` rather than `max` because returns likely diminish above
 it — extrapolating from Muse Spark 1.3 numbers — and because quota on the
 $200 plan is limited.
 
-Separate models debating each other helps because they bring different
-opinions, positions, and ways of thinking. Astra debates and executes, and
+Separate models developing approaches independently, then debating each
+other, helps because they bring different opinions, positions, and ways
+of thinking without anchoring on whoever proposed first. Astra debates
+and executes, and
 Sol reviews, because OpenAI models are
 strong at digging deep and finding issues. Sol in particular is a strong
 yet relatively cheap reviewer, which matters for a skill that runs on every
