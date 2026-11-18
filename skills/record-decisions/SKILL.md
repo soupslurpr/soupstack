@@ -28,13 +28,23 @@ and do not silently absorb it into the implementation.
 
 ## Find the register
 
-1. Use the project's existing durable decision register if it has one, such as
-   `DECISIONS.md`, `docs/decisions/`, an ADR directory, or an equivalent
-   project convention.
-2. If none exists and the project has ongoing material decisions, create
-   `DECISIONS.md` at the project root unless project instructions name a
-   better location.
-3. Keep design/specification documents as the concise present-tense target.
+1. Use the project's existing durable decision register if it has one. It may
+   be a single `DECISIONS.md`, an index plus topic files under
+   `docs/decisions/`, an ADR directory, or an equivalent project convention.
+2. If none exists and the project has ongoing material decisions, create a
+   short index plus grouped topic files in a project-appropriate location,
+   starting with only the topic files needed, unless project instructions
+   name a better location or shape. In a monorepo, use the nearest owning
+   project or package register; reserve any root register for cross-cutting
+   decisions.
+3. For a split register, keep the index as the canonical entry point:
+   maintenance rules, status vocabulary, current boundary, topic links, and
+   consolidated open and superseded indexes. Each detailed decision has one
+   owning topic or decision file. Link or summarize from the index; do not
+   duplicate detailed rationale there. Cite split entries by stable
+   `file.md#heading` where available, and cross-link related entries instead
+   of copying them.
+4. Keep design/specification documents as the concise present-tense target.
    The register preserves status, rationale, scope, rejected alternatives,
    open details, and evidence. If the register and specification disagree,
    treat that as a defect and reconcile both in the same change.
@@ -63,8 +73,9 @@ rejected, name the replacement, and keep the reason for the change.
 ## Use the register during work
 
 - Implementation, delegation, and review briefs must cite the relevant
-  decision entries and specification sections instead of relying on chat
-  history as the source of truth.
+  decision entries, by stable file and heading where available, and the
+  relevant specification sections instead of relying on chat history as the
+  source of truth.
 - Implementers must flag implemented behavior that has no register entry, and
   must not invent a missing decision silently.
 - Reviewers must check both directions: recorded decisions that were not
@@ -78,7 +89,8 @@ At each slice, milestone, review, or commit boundary, audit three sources
 against each other:
 
 1. Material decisions settled in conversation since the last boundary.
-2. The decision register, including statuses and open items.
+2. The decision register. For a split register, enumerate the index and all
+   linked register files, not only files touched by the diff.
 3. The specification and actual code/diff.
 
 Before calling the boundary complete:
@@ -89,6 +101,8 @@ Before calling the boundary complete:
   when the corresponding review, verification, commit, or release step has
   actually happened.
 - Move unresolved choices to an explicit open list with their owning step.
+- Check split-register index links, consolidated open items, and superseded
+  directions against their owning entries.
 - Report remaining contradictions instead of guessing which source is right.
 
 ## Limits
