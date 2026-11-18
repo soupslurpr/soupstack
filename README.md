@@ -20,6 +20,12 @@ Read a skill before installing it, expect to adapt it, and see
   execution, and gets independent review. Loads automatically unless
   a more specific lead workflow applies. Subagents must not load it unless
   explicitly assigned to lead.
+- [record-decisions](skills/record-decisions/SKILL.md) — Keep material
+  product, architecture, scope, authority, compatibility, and sequencing
+  decisions in the project's durable decision register before implementation
+  or delegation, then audit chat, register, specification, and code at
+  boundaries. Loads automatically when such a decision is settled, changed,
+  implemented, reviewed, or committed.
 - [review-loop](skills/review-loop/SKILL.md) — Get independent review from a
   fresh-context reviewer before completing substantive code or configuration
   changes or opening a PR, then fix and re-review until no worthwhile
@@ -29,8 +35,9 @@ Read a skill before installing it, expect to adapt it, and see
   issue bundles. Loads only when the user explicitly asks for a super review.
 
 lead-workflow and review-loop are designed to compose (lead-workflow ends
-with an independent review). super-review is a separate, explicit, much
-heavier path. grilling stands alone.
+with an independent review). record-decisions is a cross-cutting gate for
+that work. super-review is a separate, explicit, much heavier path.
+grilling stands alone.
 
 ## My setup
 
