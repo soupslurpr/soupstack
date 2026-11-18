@@ -31,12 +31,12 @@ and do not silently absorb it into the implementation.
 1. Use the project's existing durable decision register if it has one. It may
    be a single `DECISIONS.md`, an index plus topic files under
    `docs/decisions/`, an ADR directory, or an equivalent project convention.
-2. If none exists and the project has ongoing material decisions, create a
-   short index plus grouped topic files in a project-appropriate location,
-   starting with only the topic files needed, unless project instructions
-   name a better location or shape. In a monorepo, use the nearest owning
-   project or package register; reserve any root register for cross-cutting
-   decisions.
+2. If none exists and the project has ongoing material decisions, create
+   `DECISIONS.md` at the owning project root as the short index, with grouped
+   topic files under `docs/decisions/`, starting with only the topic files
+   needed, unless project instructions name a better location or shape. In a
+   monorepo, use the nearest owning project or package register; reserve any
+   root register for cross-cutting decisions.
 3. For a split register, keep the index as the canonical entry point:
    maintenance rules, status vocabulary, current boundary, topic links, and
    consolidated open and superseded indexes. Each detailed decision has one
