@@ -17,7 +17,9 @@ Read a skill before installing it, expect to adapt it, and see
 - [lead-workflow](skills/lead-workflow/SKILL.md) — The default lead agent
   workflow: the lead and a strong subagent independently develop
   approaches, debate and revise both, then the lead approves, delegates
-  execution, and gets independent review. Loads automatically unless
+  execution, and gets independent review. The lead pushes back on
+  disproportionate proposals, objections, and review findings instead of
+  deferring to them. Loads automatically unless
   a more specific lead workflow applies. Subagents must not load it unless
   explicitly assigned to lead.
 - [record-decisions](skills/record-decisions/SKILL.md) — Keep material
