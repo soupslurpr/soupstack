@@ -10,11 +10,11 @@ Read a skill before installing it, expect to adapt it, and see
 
 ## Skills
 
-- [grilling](skills/grilling/SKILL.md) — Interview the user in rounds of
+- [grilling](skills/grilling/SKILL.md): Interview the user in rounds of
   rigorous questions to stress-test a plan, decision, or idea before
   committing to it. Invoked when the user asks to be grilled. Adapted from
   Matt Pocock's skill of the same name; see [CREDITS](skills/grilling/CREDITS).
-- [lead-workflow](skills/lead-workflow/SKILL.md) — The default lead agent
+- [lead-workflow](skills/lead-workflow/SKILL.md): The default lead agent
   workflow for non-trivial design, architecture, or implementation tasks:
   the lead and a strong subagent independently develop approaches, debate
   and revise both, then the lead approves, delegates execution, and gets
@@ -23,17 +23,17 @@ Read a skill before installing it, expect to adapt it, and see
   deferring to them. Loads automatically unless a more specific lead
   workflow applies; ordinarily skip trivial edits, quick lookups, and Q&A.
   Subagents must not load it unless explicitly assigned to lead.
-- [record-decisions](skills/record-decisions/SKILL.md) — Keep material
+- [record-decisions](skills/record-decisions/SKILL.md): Keep material
   product, architecture, scope, authority, compatibility, and sequencing
   decisions in the project's durable decision register before implementation
   or delegation, then audit chat, register, specification, and code at
   boundaries. Loads automatically when such a decision is settled, changed,
   implemented, reviewed, or committed.
-- [review-loop](skills/review-loop/SKILL.md) — Get independent review from a
+- [review-loop](skills/review-loop/SKILL.md): Get independent review from a
   fresh-context reviewer before completing substantive code or configuration
   changes or opening a PR, then fix and re-review until no worthwhile
   objections remain. Loads automatically; skip for trivial edits.
-- [super-review](skills/super-review/SKILL.md) — An extensive, phased review
+- [super-review](skills/super-review/SKILL.md): An extensive, phased review
   of a user-specified target, including security triage and reproducible
   issue bundles. Loads only when the user explicitly asks for a super review.
 
@@ -60,7 +60,7 @@ Blue, super-review will be limited if a provider refusal stops a review.
 I use Muse Wonder Full at `xhigh` reasoning effort as the lead: strong in
 general, and especially at communication, orchestration, and keeping work
 on track. `xhigh` rather than `max` because returns likely diminish above
-it — extrapolating from Muse Spark 1.3 numbers — and because quota on the
+it—extrapolating from Muse Spark 1.3 numbers—and because quota on the
 $200 plan is limited.
 
 Separate models developing approaches independently, then debating each

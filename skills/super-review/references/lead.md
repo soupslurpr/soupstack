@@ -8,10 +8,10 @@ In your own prompts, evidence, reviews, bundles, reports, and updates, use gener
 
 Read only the phase file needed next. Send its prompt verbatim after replacing run-specific placeholders. Give the child the current user request and limits in its initial assignment, followed by phase 1. After that phase finishes, send each next phase to the same child with T3 `t3_thread_send`:
 
-1. [Phase 1](01-review.md) — broad review of the user-specified target.
-2. [Phase 2](02-security-triage.md) — assess the first report's security claims and requested reproducible bundles.
-3. [Phase 3](03-new-issues.md) — search for new security issues and reconcile relevant earlier reports.
-4. [Phase 4](04-integrate-and-package.md) — integrate the security work into the main review and assemble the final report and requested bundles.
+1. [Phase 1](01-review.md): broad review of the user-specified target.
+2. [Phase 2](02-security-triage.md): assess the first report's security claims and requested reproducible bundles.
+3. [Phase 3](03-new-issues.md): search for new security issues and reconcile relevant earlier reports.
+4. [Phase 4](04-integrate-and-package.md): integrate the security work into the main review and assemble the final report and requested bundles.
 
 The deliverable remains the full review of the user's target. Security examination is one part of that review; fold its supported findings, negative results, and evidence limits into the main report. Fill only run-specific placeholders, including the target, output directory, and paths to prior phase outputs. Carry the user's original request and explicit revisions forward. Do not silently turn a phase result into proof that the broader objective is complete. For phases 2 and 3, use this skill's [security review guidance](security-review.md) and [triage criteria](triage.md). Give the child the applicable criteria and evidence.
 
