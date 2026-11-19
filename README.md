@@ -15,13 +15,14 @@ Read a skill before installing it, expect to adapt it, and see
   committing to it. Invoked when the user asks to be grilled. Adapted from
   Matt Pocock's skill of the same name; see [CREDITS](skills/grilling/CREDITS).
 - [lead-workflow](skills/lead-workflow/SKILL.md) — The default lead agent
-  workflow: the lead and a strong subagent independently develop
-  approaches, debate and revise both, then the lead approves, delegates
-  execution, and gets independent review. The lead pushes back on
+  workflow for non-trivial design, architecture, or implementation tasks:
+  the lead and a strong subagent independently develop approaches, debate
+  and revise both, then the lead approves, delegates execution, and gets
+  independent review via `review-loop`. The lead pushes back on
   disproportionate proposals, objections, and review findings instead of
-  deferring to them. Loads automatically unless
-  a more specific lead workflow applies. Subagents must not load it unless
-  explicitly assigned to lead.
+  deferring to them. Loads automatically unless a more specific lead
+  workflow applies; ordinarily skip trivial edits, quick lookups, and Q&A.
+  Subagents must not load it unless explicitly assigned to lead.
 - [record-decisions](skills/record-decisions/SKILL.md) — Keep material
   product, architecture, scope, authority, compatibility, and sequencing
   decisions in the project's durable decision register before implementation
