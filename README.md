@@ -44,9 +44,13 @@ grilling stands alone.
 ## My setup
 
 These were written for, and are only tested in, [my fork of T3
-Code](https://github.com/soupslurpr/t3code) (recommended), with Muse
-and Codex. T3's orchestrator can delegate child tasks across
-providers, so a lead on one provider can hand work to models from another.
+Code](https://github.com/soupslurpr/t3code), with Muse and Codex.
+The fork is linked because it is what I use, not as a general
+recommendation: it is for people who want to use my setup, and it is
+only tested on my own devices: a desktop and a laptop, both running
+x86-64 Arch Linux with GNOME on Wayland. T3's orchestrator can
+delegate child tasks across providers, so a lead on one provider can
+hand work to models from another.
 My fork also adds specifying the access program, such as Daybreak Blue,
 when delegating, which upstream T3 Code did not have last I checked.
 super-review needs that for its Daybreak Blue fallback; without Daybreak
