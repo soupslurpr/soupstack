@@ -108,5 +108,7 @@ Before calling the boundary complete:
 ## Limits
 
 Follow explicit user or project instructions that name a different decision
-system. Do not record secrets, routine progress, every file touched, or
-detailed implementation evidence that belongs in commits, tests, or reports.
+system. Do not create a new decision register in an upstream/third-party
+repository or fork unless explicitly asked. Do not record secrets, routine
+progress, every file touched, or detailed implementation evidence that belongs
+in commits, tests, or reports.
