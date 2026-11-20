@@ -1,6 +1,0 @@
-interface:
-  display_name: "Record Decisions"
-  short_description: "Record material decisions before implementation and audit them at boundaries"
-  default_prompt: "Use $record-decisions to keep material product, architecture, scope, authority, compatibility, and sequencing decisions in the project's durable decision register before implementation or delegation, and audit chat, register, specification, and code at boundaries."
-policy:
-  allow_implicit_invocation: true
