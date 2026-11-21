@@ -11,7 +11,7 @@ After implementation and relevant checks, have **Sol at `max` effort** independe
 
 Give each round a fresh reviewer context with the task, constraints, complete change (including uncommitted and new files), and validation results. Use judgment about sharing previous findings and responses: withholding them initially can reduce anchoring, while sharing them helps verify fixes and resolve objections. Ask the reviewer to assess the approach and implementation against the user's goals and constraints and identify worthwhile problems and improvements. Reviewers inspect and test; they do not edit task files or start more review loops.
 
-The implementer judges the findings, makes worthwhile changes within scope, and validates them. Reject findings with reasons when appropriate; agreement is not mandatory. For review-only requests, report findings without making fixes or repeatedly reviewing unchanged code.
+The implementer judges the findings, makes worthwhile changes within scope, and validates them. Reject, defer, simplify, or explicitly accept residual risk with reasons when a finding's value is disproportionate; agreement is not mandatory. For review-only requests, report findings without making fixes or repeatedly reviewing unchanged code.
 
 Repeat when fixes need review or worthwhile objections remain. Keep the source stable during each review and track which version was reviewed; a HEAD SHA alone does not cover uncommitted changes. Keep the round count across continuations.
 
