@@ -63,7 +63,8 @@ of thinking without anchoring on whoever proposed first. Astra debates
 and Sol reviews, because OpenAI models are strong at digging deep and
 finding issues. Sol in particular is a strong yet relatively cheap
 reviewer, which matters for a skill that runs on every substantive
-change. Opus would likely be a good substitute for Astra.
+change. Opus would likely be a good substitute for, or addition to,
+Astra.
 
 “Astra” and “Sol” mean the latest available version at `max` reasoning
 effort, unless the user or a skill explicitly specifies a version.
