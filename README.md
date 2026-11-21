@@ -16,13 +16,16 @@ Read a skill before installing it, expect to adapt it, and see
   Matt Pocock's skill of the same name; see [CREDITS](skills/grilling/CREDITS).
 - [lead-workflow](skills/lead-workflow/SKILL.md): The default lead agent
   workflow for non-trivial design, architecture, or implementation tasks:
-  the lead and a strong subagent independently develop approaches, debate
-  and revise both, then the lead approves, delegates execution, and gets
-  independent review via `review-loop`. The lead pushes back on
-  disproportionate proposals, objections, and review findings instead of
-  deferring to them. Loads automatically unless a more specific lead
-  workflow applies; ordinarily skip trivial edits, quick lookups, and Q&A.
-  Subagents must not load it unless explicitly assigned to lead.
+  the lead and a strong subagent independently develop approaches and debate
+  and revise both (skipping debate when the approach is already
+  straightforward), then the lead settles the approach, carries out and
+  verifies the work directly (delegating slices only when clearly
+  worthwhile), and gets independent review via `review-loop`. The lead
+  pushes back on disproportionate proposals, objections, and review
+  findings instead of deferring to them. Loads automatically unless a more
+  specific lead workflow applies; ordinarily skip trivial edits, quick
+  lookups, and Q&A. Subagents must not load it unless explicitly assigned
+  to lead.
 - [review-loop](skills/review-loop/SKILL.md): Get independent review from a
   fresh-context reviewer before completing substantive code or configuration
   changes or opening a PR, then fix and re-review until no worthwhile
@@ -38,7 +41,7 @@ heavier path. grilling stands alone.
 ## My setup
 
 These were written for, and are only tested in, [my fork of T3
-Code](https://github.com/soupslurpr/t3code), with Muse and Codex.
+Code](https://github.com/soupslurpr/t3code), with Antigravity and Codex.
 The fork is linked because it is what I use, not as a general
 recommendation: it is for people who want to use my setup, and it is
 only tested on my own devices: a desktop and a laptop, both running
@@ -50,21 +53,17 @@ when delegating, which upstream T3 Code did not have last I checked.
 super-review needs that for its Daybreak Blue fallback; without Daybreak
 Blue, super-review will be limited if a provider refusal stops a review.
 
-I use Muse Wonder Full at `xhigh` reasoning effort as the lead: strong in
-general, and especially at communication, orchestration, and keeping work
-on track. `xhigh` rather than `max` because returns likely diminish above
-it—extrapolating from Muse Spark 1.3 numbers—and because quota on the
-$200 plan is limited.
+I use Gemini 4 Neon (via Antigravity) as the lead: fast, strong in
+general, and well suited to orchestration, implementation, and keeping
+work on track.
 
 Separate models developing approaches independently, then debating each
 other, helps because they bring different opinions, positions, and ways
 of thinking without anchoring on whoever proposed first. Astra debates
-and executes, and
-Sol reviews, because OpenAI models are
-strong at digging deep and finding issues. Sol in particular is a strong
-yet relatively cheap reviewer, which matters for a skill that runs on every
-substantive change. Opus would likely be a good substitute in the
-debate role.
+and Sol reviews, because OpenAI models are strong at digging deep and
+finding issues. Sol in particular is a strong yet relatively cheap
+reviewer, which matters for a skill that runs on every substantive
+change. Opus would likely be a good substitute for Astra.
 
 “Astra” and “Sol” mean the latest available version at `max` reasoning
 effort, unless the user or a skill explicitly specifies a version.
