@@ -53,9 +53,10 @@ when delegating, which upstream T3 Code did not have last I checked.
 super-review needs that for its Daybreak Blue fallback; without Daybreak
 Blue, super-review will be limited if a provider refusal stops a review.
 
-I use Gemini 4 Neon (via Antigravity) as the lead: fast, strong in
-general, and well suited to orchestration, implementation, and keeping
-work on track.
+I use Gemini 4 Neon (via Antigravity) at `high` or `extra` reasoning
+effort as the lead: fast, intelligent, and understanding, especially on
+long-horizon work, orchestration, implementation, and keeping things on
+track.
 
 Separate models developing approaches independently, then debating each
 other, helps because they bring different opinions, positions, and ways
