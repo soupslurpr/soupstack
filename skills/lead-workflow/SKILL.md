@@ -1,6 +1,6 @@
 ---
 name: lead-workflow
-description: Lead workflow for non-trivial design, architecture, or implementation tasks. Automatically load unless a more specific lead workflow applies; ordinarily skip trivial edits, quick lookups, and Q&A. Subagents must not load it unless explicitly assigned to lead the work.
+description: Lead workflow for non-trivial design, architecture, or implementation tasks. Automatically load unless a more specific lead workflow applies; ordinarily skip trivial edits, quick lookups, and Q&A. Re-read after context compaction. Subagents must not load it unless explicitly assigned to lead the work.
 ---
 
 # Lead Workflow
