@@ -16,10 +16,10 @@ Read a skill before installing it, expect to adapt it, and see
   Matt Pocock's skill of the same name; see [CREDITS](skills/grilling/CREDITS).
 - [lead-workflow](skills/lead-workflow/SKILL.md): The default lead agent
   workflow for non-trivial design, architecture, or implementation tasks:
-  the lead and a strong subagent independently develop approaches and debate
-  and revise both (skipping debate when the approach is already
-  straightforward), then the lead settles the approach, carries out and
-  verifies the work directly (delegating slices only when clearly
+  the lead and strong cross-lab subagents independently develop
+  approaches and debate and revise them (skipping debate when the approach
+  is already straightforward), then the lead settles the approach, carries
+  out and verifies the work directly (delegating slices only when clearly
   worthwhile), and gets independent review via `review-loop`. The lead
   pushes back on disproportionate proposals, objections, and review
   findings instead of deferring to them. Loads automatically unless a more
@@ -41,7 +41,8 @@ heavier path. grilling stands alone.
 ## My setup
 
 These were written for, and are only tested in, [my fork of T3
-Code](https://github.com/soupslurpr/t3code), with Antigravity and Codex.
+Code](https://github.com/soupslurpr/t3code), with Antigravity, Codex, and
+Muse Code.
 The fork is linked because it is what I use, not as a general
 recommendation: it is for people who want to use my setup, and it is
 only tested on my own devices: a desktop and a laptop, both running
@@ -60,15 +61,19 @@ track.
 
 Separate models developing approaches independently, then debating each
 other, helps because they bring different opinions, positions, and ways
-of thinking without anchoring on whoever proposed first. Astra debates
-and Sol reviews, because OpenAI models are strong at digging deep and
-finding issues. Sol in particular is a strong yet relatively cheap
-reviewer, which matters for a skill that runs on every substantive
-change. Opus would likely be a good substitute for, or addition to,
-Astra.
+of thinking without anchoring on whoever proposed first. The debate panel
+is GPT Astra (`max`), Muse Wonder Full (`max`), Gemini Neon (`xhigh`),
+and Claude Opus (`max` on Claude, `high` on Antigravity), skipping
+whichever partner shares the lead's lab so every lead gets independent
+cross-lab perspectives (and continuing with the rest if a partner hits
+quota or is unavailable). GPT Sol reviews at `max` effort, because OpenAI
+models are strong at digging deep and finding issues, and GPT Sol in
+particular is a strong yet relatively cheap reviewer—which matters for a
+skill that runs on every substantive change. Claude Opus would likely
+also be a good substitute as lead.
 
-“Astra” and “Sol” mean the latest available version at `max` reasoning
-effort, unless the user or a skill explicitly specifies a version.
+Named model families mean the latest available version unless the user or
+a skill explicitly specifies a version.
 
 lead-workflow itself does not name a lead model.
 
