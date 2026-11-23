@@ -57,11 +57,11 @@ limited if a provider refusal stops a review.
 Unless a skill or the user specifies a version, named model families mean
 the latest available version.
 
-- **Lead:** I use Gemini 4 Neon (via Antigravity) at `high` or `xhigh`
-  effort—fast, intelligent, and understanding, especially on long-horizon
-  work, orchestration, implementation, and keeping things on track. Claude
-  Opus would likely also be a good substitute as lead. `lead-workflow`
-  itself does not name a lead model.
+- **Lead:** I use Gemini 4 Neon (via Antigravity) at `high` effort—fast,
+  intelligent, and understanding, especially on long-horizon work,
+  orchestration, implementation, and keeping things on track. Claude Opus
+  would likely also be a good substitute as lead. `lead-workflow` itself
+  does not name a lead model.
 - **Debate panel (`lead-workflow`):** GPT Astra (`max`), Muse Wonder Full
   (`max`), Gemini Neon (`xhigh`), and Claude Opus (`max` on Claude, `high`
   on Antigravity), skipping whichever partner shares the lead's lab and
